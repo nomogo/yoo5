@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const selectLangage = document.getElementById('langage');
+    
+                selectLangage.addEventListener('change', function() {
+                    
+                    if (selectLangage.selectedOptions.length > 1) {
+                        
+                        for (let i = 0; i < selectLangage.options.length; i++) {
+                            if (i !== selectLangage.selectedIndex) {
+                                selectLangage.options[i].selected = false;
+                            }
+                        }
+                    }
+                });
+            });
+        </script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Comptatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mon Site Web</title>
+        <link rel="stylesheet" href="style.css" href="variables.scss">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+            <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+            <title>Bootstrap Example</title>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+          </head>
+      </head>
+      <body style="background-color: rgb(58, 55, 55);">
+        <header id="header">
+            <div class="container">
+                <img src="cha.jpeg" alt="Logo du site" class="logo">
+                
+            </div>
+            <tex id="tex">
+                <h1>My website</h1>
+            </tex>
+        </header>
+        <nav id="nav">
+            
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            
+        </nav>
+      
+<body>
+
+    <header id="list">
+    <div class="link">
+        
+           
+        <div class="grid text-center">
+            <div class="g-col-6">
+
+    <h2>Bulleted list of links</h2>
+    
+       <li>
+          <a href="https://www.kubsu.ru/">Absolute link to kubsu.ru</li>
+       <li><a href="https://www.kubsu.ru/">Absolutely secure link to kubsu.ru</li> 
+        <li><a href="https://www.kubsu.ru/"><img src="logo.jpg"height=100px alt="Logo" class="log"></a></li>
+        <li><a href="https://www.kubsu.ru/index.php">Shortcut link to internal page</a></li>
+        <li><a href="https://www.kubsu.ru/">Shortcut link to main page</a></li>
+        <li><a href="https://www.kubsu.ru/news">Link to a fragment of the current page</a></li>
+        <li><a href="https://www.kubsu.ru/search?query=test&page=2&sort=relevance">Kubsu link with three parameters</a></li>
+        <li><a href="https://www.kubsu.ru/user?id=123">Link with id parameter</a></li>
+        <li><a href="https://www.kubsu.ru/user">Relative to a page in the current directory</a></li>
+        <li><a href="https://www.kubsu.ru/university/library">from the electronic library</a></li>
+        <li><a href="https://www.kubsu.ru/ru/node/32581">catalog page   </a></li>
+        <li><a href="http://megapro.kubsu.ru/MegaPro/Web">catalog KubSU Electronic Library</a></li>
+        <li>The text of the paragraph contains a <a href="https://www.kubsu.ru/">Kubsu.ru</a>.</li>
+        <li><a href="https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Getting_started">Link to a fragment of a page on a third-party site</a></li>
+        <li>
+            <img src="qwe.jpg"height="150px" alt="Carte" class="lag" usemap="#map">
+            <map name="map">
+                <area shape="rect" coords="10,10,50,50" href="https://www.kubsu.ru/" alt="Zone 1">
+                <area shape="rect" coords="100,10,150,50" href="https://www.kubsu.ru/" alt="Zone 2">
+                <area shape="circle" coords="50,100,25" href="https://www.kubsu.ru/" alt="Zone 3">
+                <area shape="circle" coords="150,100,25" href="https://www.kubsu.ru/" alt="Zone 4">
+
+            </map>
+        </li>
+       
+        <li><a href="https://www.kubsu.ru/index.php">Lien sans href</a></li>
+        <li><a href="https://www.kubsu.ru/" rel="nofollow">Link forbidden to search engines</a></li>
+        <li><meta name="robots" content="noindex">Prohibited from indexing by search engines</li>
+        <li>
+        </div>
+       
+        <div class="g-col-6">
+            <h3>Numbered list of links</h3>
+            
+                <li><a href="https://www.kubsu.ru/">Absolute link to kubsu.ru   </a></li>
+        <li><a href="https://www.kubsu.ru/">Absolutely secure link to kubsu.ru     </a></li>
+        <li><a href="https://www.kubsu.ru/index.php">Shortcut link to internal page</a></li>
+        <li><a href="https://www.kubsu.ru/">Shortcut link to main page             </a></li>
+        <li><a href="https://www.kubsu.ru/news">Link to a fragment of the current page</a></li>
+        <li><a href="https://www.kubsu.ru/search?query=test&page=2&sort=relevance">Link with three parameters</a></li>
+        <li><a href="https://www.kubsu.ru/user?id=123">Link with id parameter      </a></li>
+        <li><a href="https://www.kubsu.ru/ru/node/42534">Relative to a page in the current directory </a></li>
+        <li><a href="https://www.kubsu.ru/university/library">Relative to a page in the about directory  </a></li>
+        <li><a href="https://www.kubsu.ru/ru/node/32581">Compared to a higher level catalog page   </a></li>
+        <li><a href="http://megapro.kubsu.ru/MegaPro/Web">Compared to a catalog page two levels higher </a></li>
+        <li>The text of the paragraph contains a <a href="https://www.kubsu.ru/">contextual link   </a>.</li>
+        <li><a href="https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Getting_started">Link to a fragment of a page on a third-party site   </a></li>
+        <li><a href="https://www.kubsu.ru/index.php">Lien sans href    </a></li>
+        <li><a href="https://www.kubsu.ru/" rel="nofollow">Link forbidden to search engines    </a></li>
+        <li><meta name="robots" content="noindex">Prohibited from indexing by search engines   </li>
+            
+
+        </li>
+
+        
+        <li><a href="ftp://user:password@ftp.kubsu.ru/file.txt">Link to an FTP file with permission</a></li>
+    </div>
+   
+    <div class="g-col-6">
+  
+  
+
+    
+    
+    <main id="main">
+        <div class="container">
+
+            <h4>Table</h4>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">column 1</th>
+                        <th>column 2</th>
+                        <th>column 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="pair">
+                        <td rowspan="2">Cellule fusionnée 1</td>
+                        <td>Cellule 1</td>
+                        <td>Cellule 2</td>
+                        <td>Cellule 3</td>
+                    </tr>
+                    <tr class="impair">
+                        <td>Cellule 4</td>
+                        <td>Cellule 5</td>
+                        <td>Cellule 6</td>
+                    </tr>
+                    <tr class="pair">
+                        <td>Cellule 7</td>
+                        <td>Cellule 8</td>
+                        <td>Cellule 9</td>
+                        <td>Cellule 10</td>
+                    </tr>
+                    <tr class="impair">
+                        <td>Cellule 11</td>
+                        <td>Cellule 12</td>
+                        <td>Cellule 13</td>
+                        <td>Cellule 14</td>
+                    </tr>
+                    <tr class="pair">
+                        <td rowspan="2">Cellule fusionnée 2</td>
+                        <td>Cellule 15</td>
+                        <td>Cellule 16</td>
+                        <td>Cellule 17</td>
+                        
+                    </tr>
+                    <tr class="impair">
+                        <td>Cellule 19</td>
+                        <td>Cellule 20</td>
+                        <td>Cellule 21</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</div>
+
+<div class="g-col-6">
+<header id="reg">
+    <h2>Registration form</h2>
+    <form action="#" method="post">
+        <label for="nom">Full name:</label><br>
+        <input type="text" id="nom" name="nom"><br>
+
+        <label for="telephone">Téléphone:</label><br>
+        <input type="tel" id="telephone" name="telephone"><br>
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="date_naissance">Date of birth:</label><br>
+        <input type="date" id="date_naissance" name="date_naissance"><br>
+
+<label for="etage">Gender:</label><br>
+ 
+    <input type="radio" id="colonne1" name="colonne" value="Man">
+    <label for="colonne1">Man</label>
+
+    <input type="radio" id="colonne2" name="colonne" value="Woman">
+    <label for="colonne2">Woman</label>
+
+       
+    
+    </label><br>
+    
+        <label for="langage">Preferred programming language:</label><br>
+        <select id="langage" name="langage" multiple>
+            <option value="Pascal">Pascal</option>
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="PHP">PHP</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+            <option value="Haskel">Haskel</option>
+            <option value="Clojure">Clojure</option>
+            <option value="Prolog">Prolog</option>
+            <option value="Scala">Scala</option>
+        </select><br>
+
+        <label for="biographie">Biography:</label><br>
+        <textarea id="biographie" name="biographie"></textarea><br>
+
+        <input type="checkbox" id="contrat" name="contrat">
+        <label for="contrat">J'ai lu le contrat</label><br><br>
+
+        <input type="submit" value="Enregistrer">
+    </form>
+</div>
+        </div>
+        
+<h5> </h5>
+
+    <footer id="footer">
+        <div class="container">
+            <p>&copy; 2024 Mon Site Web. Tous droits réservés.</p>
+        </div>
+    </footer>
+</header>
+</body>
+</html>
